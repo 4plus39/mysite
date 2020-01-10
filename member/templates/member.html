@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>member</title>
+</head>
+<body>
+    <table border=1>
+    {% for member in member_data %}
+            <tr>
+                <td>{{ member.name }}</td>
+                <td>{{ member.number }}</td>
+                <td>{{ member.email }}</td>
+            </tr>
+    {% endfor %}
+    </table>
+</body>
+</html>
