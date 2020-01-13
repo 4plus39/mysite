@@ -5,6 +5,36 @@
     <title>Title</title>
 </head>
 <body>
-    {{data}}
+    <form action="" method="post">{% csrf_token %}
+        <table border="0">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Number</td>
+                <td><input type="text" name="number"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" name="email"></td>
+                <td><input type="submit" value="Enter"></td>
+            </tr>
+        </table>
+    </form>
+    <hr>
+    <table border=1>
+        <tr>
+            <td>姓名</td><td>工號</td><td>信箱</td><td>建立時間</td>
+        </tr>
+    {% for member in member_data %}
+        <tr>
+            <td>{{ member.name }}</td>
+            <td>{{ member.number }}</td>
+            <td>{{ member.email }}</td>
+            <td>{{ member.created_date }}</td>
+        </tr>
+    {% endfor %}
+    </table>
 </body>
 </html>
