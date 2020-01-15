@@ -12,6 +12,9 @@ def hello_view(request):
         form = PostForm(request.POST)
         if form.is_valid():
             form.save()
+        else:
+            print(form.errors)
+            print(form.non_field_errors)
 
     member_data = Post.objects.all()
     return render(request, 'hello_django.html', {'member_data': member_data})
@@ -20,3 +23,6 @@ def hello_view(request):
 def member(request):
     member_data = Post.objects.all()
     return render(request, 'member.html', {'member_data': member_data})
+
+def inputform(request):
+    return render(request, 'inputform.html')
