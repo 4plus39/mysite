@@ -1,8 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>STC Task Management System: 新增項目</title>
+  <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
@@ -71,28 +73,43 @@
     <input class="w3-radio" type="radio" name="gender" value="">
     <label>指定您自己的值：<input class="w3-input" type="text"></p></label>
     <hr>
-    <label>Tasks</label>
+    
+    <label class="container">
+      <input type="checkbox" checked="checked"><font size="3">公司工作電腦升級/安裝Win8.1</font>
+      <span class="checkmark"></span>
+    </label>
     <br>
-    <input class="w3-radio" type="radio" name="gender" value="male" checked>
-    <label>公司工作電腦升級/安裝Win8.1</label>
+    <label class="container">
+      <input type="checkbox"><font size="3">System FW Version update (BIOS/BMC/CPLD/System Management)</font>
+      <span class="checkmark"></span>
+    </label>
     <br>
-    <input class="w3-radio" type="radio" name="gender" value="female">
-    <label>System FW Version update (BIOS/BMC/CPLD/System Management)</label>
+    <label class="container">
+      <input type="checkbox"><font size="3">Adapter FW Version update</font>
+      <span class="checkmark"></span>
+    </label>
     <br>
-    <input class="w3-radio" type="radio" name="gender" value="">
-    <label>Adapter FW Version update</label>
+    <label class="container">
+      <input type="checkbox"><font size="3">OS, Driver and functional SW Installation</font>
+      <span class="checkmark"></span>
+    </label>
     <br>
-    <input class="w3-radio" type="radio" name="gender" value="">
-    <label>OS, Driver and functional SW Installation</label>
+    <label class="container">
+      <input type="checkbox"><font size="3">Sanity Test</font>
+      <span class="checkmark"></span>
+    </label>
     <br>
-    <input class="w3-radio" type="radio" name="gender" value="">
-    <label>Sanity Test</label>
+    <label class="container">
+      <input type="checkbox"><font size="3">Field Service and Follow Up</font>
+      <span class="checkmark"></span>
+    </label>
     <br>
-    <input class="w3-radio" type="radio" name="gender" value="">
-    <label>Field Service and Follow Up</label>
-    <br>
-    <input class="w3-radio" type="radio" name="gender" value="">
-    <label>指定您自己的值:<input class="w3-input" type="text"></p></label>
+    <label class="container">
+      <input type="checkbox"><font size="3">指定您自己的值:</font>
+      <span class="checkmark"></span>
+      <input class="w3-input" type="text"></p>
+    </label>
+    
 
   </form>
 
