@@ -4,16 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <title>STC Task Management System: 新增項目</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
   <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-<div class="w3-container w3-blue">
-  <a href="/" class="w3-bar-item w3-button"><h4>Home</h4></a>>
-  <a href="" class="w3-bar-item w3-button"><h4>SS</h4></a>
-</div>
+  <ul class="pagination">
+    <li><a href="/">Home</a></li>
+    <li><a href="/inputform/" class="active">SS</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+  </ul>
 
-  <form class="w3-container">
+<div class=container>
+  <form class="w3-card">
     <p>
     <label>需求者姓名</label>
     <input class="w3-input" type="text"></p>
@@ -109,9 +113,8 @@
       <span class="checkmark"></span>
       <input class="w3-input" type="text"></p>
     </label>
-    
-
   </form>
+</div>
 
 </body>
 </html>
