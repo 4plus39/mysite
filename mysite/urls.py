@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from member.views import hello_view, member, inputform
+from BulkDelete.views import document
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', hello_view),
     path('member/', member),
     path('inputform/', inputform),
+    path('bulkdelete/', document),
 ]
